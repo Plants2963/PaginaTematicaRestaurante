@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kreon:wght@300..700&display=swap');
+
+*{
+   font-family: "Poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+header{
+   width: 100%;
+   min-height: 100vh;
+   background: url("../img/bg-header.png");
+   background-size: cover;
+   background-position: center;
+   padding-top: 40px;
+}
+
+header nav{
+   width: 84%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header ul a{
+   color: #fff;
+   margin: 0 12px;
+   padding: 10px 14px;
+   text-decoration: none;
+   font-size: 30px;
+   font-family: "Kreon", serif;
+   font-optical-sizing: auto;
+}
+
+header ul a:hover{
+   border-bottom:  1px solid #fff;
+}
+
+#hero{
+   width: 80%;
+   margin: 0 auto;
+   text-align: left;
+   padding-top: 10%;
+}
+
+#hero h2{
+   font-size: 80px;
+   color:  #FCAF58;
+   font-weight: 700;
+   font-family: "Kaushan Script", cursive;
+   font-style: normal; 
+}
+
+#hero h1{
+   font-size: 40px;
+   color: #fff;
+   font-weight: 400;
+   margin-bottom: 80px;
+}
+
+#hero button {
+   background: #C03221; 
+   transition: background-color 0.3s ease; 
+   color: #ffffff;
+   padding: 10px 30px;
+   font-size: 26px;
+   border-radius: 8px;
+   text-decoration: none;
+   font-family: "Kreon", serif;
+}
+
+#hero button:hover {
+   background-color: #6b1c13; 
+}
+
+#planes{
+   background: url("../img/fondo.png");
+   background-size: cover;
+   background-position: center; 
+   width: 100%;
+   text-decoration: none;
+   font-family: "Kreon", serif;
+   color: #F9C784;
+}
+
+.Textocomida1{
+   margin-left: 30%;
+}
+
+.Textocomida2{
+   margin-left: auto;
+}
+
+.Textocomida3{
+   margin-left: auto;
+}
+
+.image-container img {
+   position: absolute;
+   margin-top: 10%;
+   top: 0; /* Asegúrate de que esté al principio del contenedor */
+   transform: translateY(-20px); /* Ajusta el valor según el efecto que desees */
+}
+
+
+
+
+
+
+#planes h2{
+   text-align: center;
+}
+
+#planes p{
+   text-align: center;
+}
+
+article {
+   display: left;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 70px;
+   background-color: #ffffff00;
+}
+
+.image-container {
+   position: absolute;
+   overflow: hidden;
+   width: 400px; /* Ajusta el tamaño según tu imagen */
+   height: 700px; /* Ajusta el tamaño según tu imagen */
+}
+
+.image {
+   width: 100%;
+   height: 100%;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.562);
+   color: white;
+   font-size: 24px;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image {
+   transform: scale(1.1);
+   opacity: 0.5; /* Opaca la imagen */
+}
+
+.image-container:hover .overlay {
+   opacity: 1; /* Muestra el texto */
+}
+
+#planes h2{
+   font-size:  50px;
+   margin-bottom: 30px;
+   font-family: "Rowdies", serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #FCAF58;
+}
+
+
+#planes p{
+   font-size: 22px;
+   margin-bottom: 50px;
+}
+
+#planes .fila{
+   display: flex;
+   justify-content: center;
+}
+
+#planes article{
+   margin: 20px 50px;
+   position: relative;
+}
+
+#planes article h3{
+   position: absolute;
+   top: 0px;
+   color: #F9C784;
+   width: 100%;
+   text-align: center;
+   font-size: 40px;
+   font-family: "Kreon", serif;
+}
+
+#destino {
+   
+   background-color:#C03221 ;
+   background-size: cover;
+   background-position: center;
+   text-align: center; /* Centra el texto del encabezado */
+   position: relative; /* Necesario para el posicionamiento de controles */
+}
+
+#destino h2{
+   color: #000000;
+   font-size:  50px;
+   margin-bottom: 50px;
+   font-family: "Rowdies", serif;
+   font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+.carousel {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+   display: flex;
+   transition: transform 0.5s ease;
+   width: 100%; /* Asegura que el contenedor ocupe el 100% */
+}
+
+.carousel-item {
+   min-width: 100%;
+   transition: opacity 0.5s ease;
+   display: flex; /* Para centrar el contenido */
+   flex-direction: column; /* Alinear el contenido verticalmente */
+   align-items: center; /* Centrar horizontalmente */
+}
+
+.carousel-item img {
+   width: 95%; /* Ajusta el tamaño de la imagen */
+   max-width: 400px; /* Establece un ancho máximo */
+   margin: 0 auto; /* Centra la imagen */
+   border-radius: 10px 10px 0 0;
+}
+
+.carousel-item h3 {
+   margin: 15px 0;
+   font-size: 1.5em;
+   color: #555;
+}
+
+.carousel-controls {
+   position: absolute;
+   top: 50%;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   transform: translateY(-50%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+   background: rgba(255, 255, 255, 0.7);
+   border: none;
+   border-radius: 50%;
+   padding: 10px;
+   cursor: pointer;
+   transition: background 0.3s;
+   font-size: 1.5em; /* Tamaño del símbolo */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+   background: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-control-prev::before {
+   content: '◀'; /* Símbolo de izquierda */
+}
+
+.carousel-control-next::before {
+   content: '▶'; /* Símbolo de derecha */
+}
+
+
+#Somos {
+   width: 100%;
+   min-height: 70vh;
+   background: url("../img/Arrozxd.png");
+   background-size: cover;
+   background-position: center;
+   padding-top: 40px;
+   text-align: center; /* Centra el contenido */
+}
+
+#Somos h2 {
+   font-size: 70px;
+   margin-bottom: 30px;
+   font-family: "Rowdies", serif;
+   font-weight: 400;
+   color: #C03221;
+}
+
+#Somos.imagen img {
+   max-width: 600px; /* Ajusta el tamaño de la imagen según sea necesario */
+   height: auto;
+   border-radius: 10px; /* Esquinas redondeadas para la imagen */
+   margin: 0 auto; /* Centra la imagen horizontalmente */
+   display: block; /* Hace que el margen automático funcione */
+}
+
+
+
+
+
+
+
+
+
+/* Estilo para la sección de galería */
+.galeria {
+    
+   background-size: cover;
+   background-position: center;
+   padding: 40px 0; /* Añadí un poco de relleno alrededor de la sección */
+}
+
+/* Contenedor flex para imagen y texto */
+.contenido-galeria {
+   display: flex;
+   align-items: center; /* Centra verticalmente los elementos */
+   justify-content: space-between; /* Espacio entre la imagen y el texto */
+   max-width: 1200px; /* Opcional: Limitar el ancho para que no se estire demasiado */
+   margin: 0 auto; /* Centra el contenedor horizontalmente */
+   padding: 0 20px; /* Añadir relleno lateral para que no se peguen a los bordes */
+}
+
+/* Estilo para la imagen */
+.imagen-galeria {
+   flex: 1;
+   padding-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen-galeria img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px; /* Bordes redondeados */
+   object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
+/* Estilo para el texto */
+.texto-galeria {
+   flex: 1;
+   font-weight: 400;
+   font-family: "Rowdies", serif;
+   color: #000000;
+   ; /* Blanco para que contraste con el fondo */
+   max-width: 500px; /* Limita el ancho del texto */
+}
+
+.texto-galeria h2 {
+   font-size: 2.5rem; /* Tamaño grande para el título */
+   margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.texto-galeria p {
+   font-size: 1.2rem;
+   line-height: 1.6;
+   font-weight: 400;
+   font-family: "Rowdies", serif;
+   color: #000000;
+}
+
+
+
+
+
+
+
+/* Estilos generales */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+.reservas {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start; /* Alinea los elementos hacia la parte superior */
+   background-image: url('../WebsiteRumbo/img/FondoReserva.png');
+   background-size: cover;
+   background-position: center;
+   padding: 50px 0;
+}
+
+.contenido-reservas {
+   display: flex;
+   flex-direction: row; /* Organiza los elementos en una fila */
+   width: 80%;
+   max-width: 1200px;
+}
+
+.texto-reservas {
+   flex: 1; /* Toma el 50% de ancho en pantallas grandes */
+   padding: 20px;
+   color: #000000;
+}
+
+.texto-reservas h2 {
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+
+.texto-reservas img {
+   max-width: 100%;
+   height: auto;
+   margin-top: 20px;
+}
+
+.texto-reservas p {
+   font-size: 1.1rem;
+   margin-top: 10px;
+}
+
+.formulario-reserva {
+   flex: 1; /* Toma el 50% de ancho en pantallas grandes */
+   background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el formulario */
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   margin-left: 40px; /* Espacio entre la imagen y el formulario */
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+form label {
+   margin-bottom: 8px;
+   font-weight: bold;
+}
+
+form input, form textarea, form button {
+   margin-bottom: 15px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+form input[type="number"], form input[type="date"], form input[type="time"] {
+   max-width: 300px;
+}
+
+form textarea {
+   min-height: 100px;
+}
+
+form button {
+   background-color: #f28e1c;
+   color: white;
+   font-size: 1.2rem;
+   cursor: pointer;
+   border: none;
+   transition: background-color 0.3s;
+}
+
+form button:hover {
+   background-color: #d17a13;
+}
+
+/* Responsividad: Estilos en pantallas más pequeñas */
+@media (max-width: 768px) {
+   .contenido-reservas {
+       flex-direction: column; /* Organiza los elementos en una columna en pantallas pequeñas */
+       align-items: center;
+   }
+
+   .texto-reservas, .formulario-reserva {
+       flex: 1 100%;
+       margin: 20px 0;
+   }
+
+   .formulario-reserva {
+       margin-left: 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+.card {
+   margin-left: 42%;
+   margin-top: 35px;
+   width: 290px;
+   height: 64px;
+   background: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   border-radius: 20px;
+   position: relative;
+   border: 2px solid transparent;
+   transition: all 0.5s ease-in-out;
+ }
+ 
+ .card:focus-within {
+   background-color: rgba(17, 17, 17, 0.5);
+   backdrop-filter: blur(10px);
+   border: 2px solid rgb(27, 27, 27);
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+ }
+ 
+ .card button {
+   font-size: 34px;
+   background-color: transparent;
+   width: 50px;
+   padding: 7px;
+   height: 50px;
+   border-radius: 100%;
+   transition: all 0.2s ease-in;
+   border: 0;
+   cursor: pointer;
+ }
+ 
+ .card button:focus {
+   background-color: rgb(255, 255, 255);
+   margin-bottom: 50%;
+ }
+ 
+#contacto{
+   width: 100%;
+   text-align: center;
+   position: relative;
+   padding: 80px 0;
+   background: url("../img/fondo\ contacto.png");
+   background-position: center;
+   background-size: cover;
+}
+
+#contacto h2{
+   font-size: 50px;
+   margin-bottom: 30px;
+   color:  #C03221;
+   font-family: "Rowdies", serif;
+}
+
+#contacto p{
+   font-size: 30px;
+   margin-bottom: 30px;
+   color: #C03221;
+   font-family: "Kreon", serif;
+}
+
+#contacto form{
+   width: 800px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#contacto form input{
+   width: 38%;
+   padding: 12px 20px;
+   font-size: 20px;
+   margin: 20px ;
+}
+
+#contacto form select{
+   width: 43%;
+   padding: 12px 20px;
+   font-size: 20px;
+   margin: 20px 
+}
+
+#contacto  button{
+   background: #C03221;
+   transition: background-color 0.3s ease; 
+   color: #fff;
+   font-size: 22px;
+   padding: 12px 50px;
+   border-radius: 6px;
+}
+
+#contacto button:hover {
+   background-color: #6b1c13; 
+}
+
+footer{
+   background: black;
+   color: #fff;
+   padding: 40px;
+   text-align: center;
+}
